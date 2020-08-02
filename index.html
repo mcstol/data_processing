@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Login Tratamento Dados</title>
 </head>
-<body class="centralizado">
-    <form class="pure-form pure-form-aligned">
+    <body>
+        <img class="logo" src="/_images/logo.svg" alt="logo da empresa">
+        <form class="pure-form pure-form-aligned">
         <fieldset id="formulario">
-            <div class="pure-control-group">
+            <!--<div class="pure-control-group">
                 <input type="text" id="aligned-name" placeholder="Username" />
-                <!--<span class="pure-form-message-inline">This is a required field.</span>-->
+                <span class="pure-form-message-inline">This is a required field.</span>
+            </div>-->
+            <div class="pure-control-group">
+                <input onblur="emailValidation(event)" type="email" id="aligned-email" placeholder="Email Address" />
             </div>
             <div class="pure-control-group">
                 <input type="password" id="aligned-password" placeholder="Password" />
-            </div>
-            <div class="pure-control-group">
-                <input type="email" id="aligned-email" placeholder="Email Address" />
             </div>
             <!--<div class="pure-control-group">
                 <label for="aligned-foo">Supercalifragilistic Label</label>
@@ -27,8 +28,10 @@
             <div class="pure-controls">
                 <label for="aligned-cb" class="pure-checkbox">
                     <input type="checkbox" id="aligned-cb" />termos de uso</label>
-                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                    <button type="submit" class="pure-button pure-button-primary">Login</button>
             </div>
-        </fieldset>    
-</body>
+            <a href="firstAccess.html" >Primeiro login!</a>
+            </fieldset> 
+        <script src="js/validation.js"></script>
+    </body>
 </html>
