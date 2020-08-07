@@ -46,3 +46,7 @@ img{
 .logo{
     margin-bottom: 20px;
 }
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
